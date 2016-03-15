@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实现一个TAB</title>
+	<style>
+	*{
+		padding:0px;
+		margin: 0px;
+	}
+	.body{
+		font-size: 14px;
+		font:14px "Micro yahei"; 
+
+	}
+	.tab{
+		border:1px solid #999;                
+        width:574px;
+        margin: 0 auto;
+
+	} 
+	ul{
+		list-style-type: none;
+		display: flex;
+	}
+
+	li{
+		list-style:none;
+        display:inline-block;
+        text-align:center;
+        border: 1px solid #cecece;
+        background-color:#f1f1f1;
+        width:150px;
+        line-height:35px;
+        border-collapse:collapse;
+        flex-grow:1;
+
+	}
+	 a{
+    
+        text-decoration: none;
+        color: #000000;
+   
+	 }
+	 .hr{
+	 	border: 0px solid #cecece;
+        background-color:#fff;
+	 }
+	 li:hover{
+	 	background-color: #fff;
+	 	border-bottom:#fff;
+	 }
+	 .content{
+	 	padding: 20px;
+	 }
+
+	</style>
+</head>
+<body>
+	<div class="tab">
+		<div class="head">
+		  <ul class="hd">
+		  	<li class="hr"><a href="#">课程</a></li>
+		  	<li><a href="#">学习计划</a></li>
+		  	<li><a href="#">技能图谱</a></li>
+		  </ul>
+		</div>
+	    <div class="content">课程内容</div>
+	</div>
+</body>
+</html>
