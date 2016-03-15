@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实现一个弹窗</title>
+	<style>
+	*{
+		margin: 0px;
+		padding:0px;
+	}
+	.container{
+		margin: 0 auto;
+		width: 302px;
+		border-radius: 5px;
+        border: 1px solid #ccc;
+        position: fixed;
+        top:50%;
+        left:50%;
+        z-index: 999;
+        transform: translate(-50%,-50%);/*设置水平垂直居中*/
+	}
+	.header{
+		background-color: #eee;
+		height: 40px;
+		padding:0 20px;
+		position: relative;
+
+	}
+	.title{
+		font:14px "Micro yahei";
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;	
+		line-height: 40px;	
+	}
+	.btn{
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        }
+        
+	}
+	.main{
+		margin-top:20px;
+		background-color:#fff;
+		font: 12px "SimSun";
+		position: relative;
+	}
+	.main>p{
+		margin:20px; 
+		line-height: 1.5em;
+	}
+	button{
+		width: 80px;
+		height: 30px;
+		background-color: blue;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+        display: block;
+		margin: 20px auto;
+		border: none;
+
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<p class="title">标题栏</p>
+			<div class="btn"><img src="../x.png" alt="关闭"></div>
+		</div>
+		<div class="main">
+			<p>内容段落</p>
+			<button type="button">确定</button>
+		</div>
+	</div>
+</body>
+</html>
